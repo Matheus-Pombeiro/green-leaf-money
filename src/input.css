@@ -16,4 +16,24 @@
         @apply px-3 py-2 bg-green-500 hover:bg-green-700 active:bg-green-800 text-white font-medium rounded;
     }
 
+    .modal-container {
+        @apply w-11/12 md:w-7/12 xl:w-2/6 h-fit p-4 space-y-2 rounded-md drop-shadow;
+    }
+
+    .modal-close {
+        @apply h-9 cursor-pointer hover:scale-105 transition duration-200 ease-in-out ml-auto;
+    }
+
+    .modal-frm {
+        @apply space-y-3;
+    }
+
+    .modal-label {
+        @apply text-lg;
+    }
+
+    .input {
+        @apply w-full px-2 py-1.5 bg-gray-100 placeholder:text-gray-500 rounded outline-none border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-400 focus:ring-opacity-20 transition duration-200 ease-in-out;
+    }
+
 }
