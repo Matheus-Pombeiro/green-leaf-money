@@ -36,7 +36,7 @@ JavaScript
     <li>Modals</li>
     <li>Theme Switching</li>
     <li>LocalStorage to Save the User's Theme Preferences</li>
-    <li>LocalStorage to Save the User's Cash Values</li>
+    <li>LocalStorage to Save the User's Balance, Deposit and Withdrawal's Values</li>
 </ul>
 
 <hr>
