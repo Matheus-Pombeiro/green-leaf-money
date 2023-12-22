@@ -26,15 +26,17 @@ Tailwind CSS
     <li>Mobile First</li>
     <li>Responsivity</li>
     <li>Animations</li>
+    <li>Dark Mode</li>
 </ul>
 
 JavaScript
 
 <ul>
-    <li>Programming Logic and Algorithms</li>
+    <li>Business' Programming Logic and Algorithms</li>
     <li>Modals</li>
     <li>Theme Switching</li>
     <li>LocalStorage to Save the User's Theme Preferences</li>
+    <li>LocalStorage to Save the User's Cash Values</li>
 </ul>
 
 <hr>
