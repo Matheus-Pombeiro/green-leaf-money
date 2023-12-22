@@ -7,6 +7,9 @@ import frmWithdrawal from "./frmWithdrawal.js";         // Withdrawal's form
 
 // Get the references from HTML document
 
+// Balance output reference
+const balanceOut = document.querySelector("[data-balance-out]");
+
 // Modal references
 
 // Deposit
@@ -29,8 +32,8 @@ const withdrawalOut = document.querySelector("[data-withdrawal-out]");          
 const theme = document.querySelector("[data-theme]");       // Theme button
 
 // Call the imported scripts
-themeSwitching(theme);                                              // Theme switching
-modalDeposit(depositBtn, depositModal, depositClose);               // Deposit's modal
-frmDeposit(depositFmr, depositIn, depositModal);                    // Deposit's form
-modalWithdrawal(withdrawalBtn, withdrawalModal, withdrawalClose);   // Withdrawal's modal
-frmWithdrawal(withdrawalFmr, withdrawalIn, withdrawalModal);        // Withdrawal's form
+themeSwitching(theme);                                                                      // Theme switching
+modalDeposit(depositBtn, depositModal, depositClose);                                       // Deposit's modal
+frmDeposit(depositFmr, depositIn, depositModal, depositOut, balanceOut);                    // Deposit's form
+modalWithdrawal(withdrawalBtn, withdrawalModal, withdrawalClose);                           // Withdrawal's modal
+frmWithdrawal(withdrawalFmr, withdrawalIn, withdrawalModal, withdrawalOut, balanceOut);     // Withdrawal's form
