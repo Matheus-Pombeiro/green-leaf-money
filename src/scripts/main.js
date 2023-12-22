@@ -1,10 +1,11 @@
 // Import srcipts
+import themeSwitching from "./theme.js";
 import modalDeposit from "./modalDeposit.js";           // Deposit's modal
 import modalWithdrawal from "./modalWithdrawal.js";     // Withdrawal's modal
 
 // Get the references from HTML document
 
-// Input Modals
+// Modal references
 
 // Deposit
 const depositBtn = document.querySelector("[data-deposit-btn]");            // Btn
@@ -20,6 +21,11 @@ const withdrawalClose = document.querySelector("[data-withdrawal-close]");      
 const withdrawalFmr = document.querySelector("[data-withdrawal-frm]");            // Form
 const withdrawalIn = document.querySelector("[data-withdrawal-in]");              // Input
 
+// Theme Switching reference
+const theme = document.querySelector("[data-theme]");       // Theme button
+
+
 // Call the imported scripts
+themeSwitching(theme);                                              // Theme switching
 modalDeposit(depositBtn, depositModal, depositClose);               // Deposit's modal
 modalWithdrawal(withdrawalBtn, withdrawalModal, withdrawalClose);   // Withdrawal's modal
