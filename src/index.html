@@ -61,14 +61,57 @@
 
         </section>
 
-        <!--Deposit / Withdrawal Input Buttons-->
-        <section class="w-fit mx-auto space-x-2">
+        <!--Deposit / Withdrawal Input Buttons and Modals-->
+        <section class="w-fit mx-auto space-x-2 flex justify-center items-center">
             
-            <button class="button" data-deposit-btn>Do Deposit</button>
+            <!--Deposit-->
+            <section>
 
-            <button class="button" data-withdrawal-btn>Do Withdrawal</button>
+                <button class="button" data-deposit-btn>Do Deposit</button>
 
-            <button type="reset" class="button">Reset</button>
+                <dialog class="modal-container" data-deposit-modal>
+
+                    <img src="assets/close.png" alt="Close" class="h-9 cursor-pointer hover:scale-105 transition duration-200 ease-in-out ml-auto" data-deposit-close>
+
+                    <form class="modal-frm" data-deposit-frm>
+
+                        <label for="deposit"><p class="modal-label">Do Deposit:</p></label>
+                        <input type="number" name="deposit" id="deposit" class="input" step="0.01" min="0.01" placeholder="Write your Deposit value here" data-deposit-in required>
+                        <button type="submit" class="button">Deposit</button>
+
+                    </form>
+
+                </dialog>
+
+            </section>
+
+            <!--Withdrawal-->
+            <section>
+                
+                <button class="button" data-withdrawal-btn>Do Withdrawal</button>
+
+                <dialog class="modal-container" data-withdrawal-modal>
+
+                    <img src="assets/close.png" alt="Close" class="modal-close" data-withdrawal-close>
+
+                    <form class="modal-frm" data-withdrawal-frm>
+
+                        <label for="withdrawal"><p class="modal-label">Do Withdrawal:</p></label>
+                        <input type="number" name="withdrawal" id="withdrawal" class="input" step="0.01" min="0.01" placeholder="Write your Withdrawal value here" data-withdrawal-in required>
+                        <button type="submit" class="button">To Withdraw</button>
+
+                    </form>
+
+                </dialog>
+            
+            </section>
+
+            <!--Reset-->
+            <section>
+                
+                <button class="button" data-reset-btn>Reset</button>
+            
+            </section>
 
         </section>
 
@@ -84,6 +127,9 @@
     <!--G-Translate.io Scripts-->
     <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
     <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+
+    <!--Main Script-->
+    <script type="module" src="scripts/main.js"></script>
     
 </body>
 </html>
