@@ -1,7 +1,7 @@
 # green-leaf-money
- A online basic bank simulator
+ A online cash machine simulator
 
-Hi, there! This is the Green Leaf Money, your online bank simulator. Of course, the project's features are a bit basic, but here you can simulate your withdrawals and deposits. You can also see the resulting balance of this financial actions. The project's idea was already used by many devs, but the solution and design of the Green Leaf Money belongs to its author. Even so, this project is under the MIT Licence, so you are free to check the code!
+Hi, there! This is the Green Leaf Money, your online cash machine simulator. Of course, the project's features are a bit basic, but here you can simulate your deposits and withdrawals. You can also see the resulting balance of this financial actions. The project's idea was already used by many devs, but the solution and design of the Green Leaf Money belongs to its author. Even so, this project is under the MIT Licence, so you are free to check the code!
 
 The whole project was developed using Front-end technologies, like HTML5, Tailwind CSS and JavaScript. The Figma was used to design the page. You can check the uses of this technologies next.
 
