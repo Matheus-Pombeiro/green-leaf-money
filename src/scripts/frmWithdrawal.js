@@ -18,9 +18,9 @@ const frmWithdrawal = (withdrawalFmr, withdrawalIn, withdrawalModal, withdrawalO
 
         // Process the balance value and write it
         const balanceTotal = depositTotal - withdrawalSum;
-        balanceOut.innerHTML = `$ ${balanceTotal.toFixed(2)}`;
+        balanceOut.innerHTML = `US$ ${balanceTotal.toFixed(2)}`;
 
-        withdrawalOut.innerHTML = `$ ${lastWithdrawal.toFixed(2)}`;   // Write the last withdrawal  
+        withdrawalOut.innerHTML = `US$ ${lastWithdrawal.toFixed(2)}`;   // Write the last withdrawal  
 
         withdrawalIn.value = "";    // Clean the input
         withdrawalModal.close();    // Close the modal after the submit event

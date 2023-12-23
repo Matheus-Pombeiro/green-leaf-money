@@ -13,11 +13,11 @@ const balance = (balanceOut, depositOut, withdrawalOut) => {
 
         // Process the balance value and write it
         const balanceTotal = depositTotal - withdrawalTotal;
-        balanceTotal == 0 ? balanceOut.innerHTML = "" : balanceOut.innerHTML = `$ ${balanceTotal.toFixed(2)}`; 
+        balanceTotal == 0 ? balanceOut.innerHTML = "" : balanceOut.innerHTML = `US$ ${balanceTotal.toFixed(2)}`; 
 
         // Write the latest deposit and withdrawal
-        lastDeposit == 0 ? depositOut.innerHTML = "" : depositOut.innerHTML = `$ ${(lastDeposit.toFixed(2))}`;
-        lastWithdrawal == 0 ? withdrawalOut.innerHTML = "" : withdrawalOut.innerHTML = `$ ${lastWithdrawal.toFixed(2)}`;
+        lastDeposit == 0 ? depositOut.innerHTML = "" : depositOut.innerHTML = `US$ ${(lastDeposit.toFixed(2))}`;
+        lastWithdrawal == 0 ? withdrawalOut.innerHTML = "" : withdrawalOut.innerHTML = `US$ ${lastWithdrawal.toFixed(2)}`;
 
     });
 
