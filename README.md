@@ -37,11 +37,12 @@ JavaScript
     <li>Theme Switching</li>
     <li>LocalStorage to Save the User's Theme Preferences</li>
     <li>LocalStorage to Save the User's Balance, Deposit and Withdrawal's Values</li>
+    <li>Remove Output and Data Values from the LocalStorage</li>
 </ul>
 
 <hr>
 
 Author's Name: Matheus V. G. Pombeiro<br>
-Post's Date: (mm-dd-yyyy)<br>
+Post's Date: 12/23/2023 (mm-dd-yyyy)<br>
 Author's Education: Degree in Accounting Science and Software Engineering student<br>
 Author's LinkedIn Profile: <a href="https://www.linkedin.com/in/matheus-pombeiro/" target="_blank" rel="noopener noreferrer">Matheus Pombeiro</a>
