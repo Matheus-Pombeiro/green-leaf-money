@@ -9,6 +9,19 @@
 </head>
 <body class="w-screen h-screen bg-gray-100 flex flex-col justify-between dark:bg-zinc-800">
 
+    <!--Main Modal-->
+    <dialog class="w-11/12 md:w-8/12 xl:w-3/6 h-fit p-4 space-y-5 rounded-md drop-shadow" data-modal-main>
+
+        <img src="assets/close.png" alt="Close" class="modal-close" data-modal-main-close>
+
+        <h1 class="text-xl xl:text-2xl font-semibold text-center">Welcome to the Green Leaf Money!</h1>
+
+        <p class="text-justify">Hey you! You're on the Green Leaf Money's webpage, your online cash machine simulator. Here you can simulate your deposits, withdrawals and your financial balance as well. This webpage counts with some interesting and helpful front-end technologies that will make your experience better. You can continue with me and simulate your financials or you can check my other authorial projects by clicking on the following button.</p>
+
+        <button class="button flex mx-auto"><a href="https://matheus-pombeiro.github.io/my-authorial-projects/" target="_blank" rel="noopener noreferrer">Know More</a></button>
+
+    </dialog>
+
     <!--Header-->
     <header class="w-full h-16 px-3 bg-white drop-shadow flex justify-between items-center dark:bg-zinc-700">
 
@@ -71,7 +84,7 @@
 
                 <dialog class="modal-container" data-deposit-modal>
 
-                    <img src="assets/close.png" alt="Close" class="h-9 cursor-pointer hover:scale-105 transition duration-200 ease-in-out ml-auto" data-deposit-close>
+                    <img src="assets/close.png" alt="Close" class="modal-close" data-deposit-close>
 
                     <form class="modal-frm" data-deposit-frm>
 
