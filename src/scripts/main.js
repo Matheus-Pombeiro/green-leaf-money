@@ -6,8 +6,12 @@ import modalDeposit from "./modalDeposit.js";           // Deposit's modal
 import frmDeposit from "./fmrDeposit.js";               // Deposit's form
 import modalWithdrawal from "./modalWithdrawal.js";     // Withdrawal's modal
 import frmWithdrawal from "./frmWithdrawal.js";         // Withdrawal's form
+import resetBtn from "./resetBtn.js";                   // Reset values
 
 // Get the references from HTML document
+
+// Theme Switching reference
+const theme = document.querySelector("[data-theme]");       // Theme button
 
 // Balance output reference
 const balanceOut = document.querySelector("[data-balance-out]");
@@ -34,8 +38,8 @@ const withdrawalFmr = document.querySelector("[data-withdrawal-frm]");          
 const withdrawalIn = document.querySelector("[data-withdrawal-in]");              // Input
 const withdrawalOut = document.querySelector("[data-withdrawal-out]");            // Output
 
-// Theme Switching reference
-const theme = document.querySelector("[data-theme]");       // Theme button
+// Reset button reference
+const resetButton = document.querySelector("[data-reset-btn]");    // Reset btn
 
 // Call the imported scripts
 modalMain(modal, modalClose);                                                               // Main's modal
@@ -45,3 +49,4 @@ modalDeposit(depositBtn, depositModal, depositClose);                           
 frmDeposit(depositFmr, depositIn, depositModal, depositOut, balanceOut);                    // Deposit's form
 modalWithdrawal(withdrawalBtn, withdrawalModal, withdrawalClose);                           // Withdrawal's modal
 frmWithdrawal(withdrawalFmr, withdrawalIn, withdrawalModal, withdrawalOut, balanceOut);     // Withdrawal's form
+resetBtn(resetButton, balanceOut, depositOut, withdrawalOut);                               // Reset values
