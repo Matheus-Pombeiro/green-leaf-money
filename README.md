@@ -37,7 +37,7 @@ JavaScript
     <li>Theme Switching</li>
     <li>LocalStorage to Save the User's Theme Preferences</li>
     <li>LocalStorage to Save the User's Balance, Deposit and Withdrawal's Values</li>
-    <li>Remove Output and Data Values from the LocalStorage</li>
+    <li>Removes LocalStorage Output and Data Values with the Reset Button</li>
 </ul>
 
 <hr>
