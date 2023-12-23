@@ -8,16 +8,16 @@ const balance = (balanceOut, depositOut, withdrawalOut) => {
         const withdrawalTotal = Number(localStorage.getItem("withdrawalSum"));
 
         // Get the latest deposit and withdrawal from localStorage
-        const lastDeposit = localStorage.getItem("lastDeposit");
-        const lastWithdrawal = localStorage.getItem("lastWithdrawal");
+        const lastDeposit = Number(localStorage.getItem("lastDeposit"));
+        const lastWithdrawal = Number(localStorage.getItem("lastWithdrawal"));
 
         // Process the balance value and write it
         const balanceTotal = depositTotal - withdrawalTotal;
-        balanceTotal == 0 ? balanceOut.innerHTML = "" : balanceOut.innerHTML = balanceTotal; 
+        balanceTotal == 0 ? balanceOut.innerHTML = "" : balanceOut.innerHTML = `$ ${balanceTotal.toFixed(2)}`; 
 
         // Write the latest deposit and withdrawal
-        depositOut.innerHTML = lastDeposit;
-        withdrawalOut.innerHTML = lastWithdrawal;
+        depositOut.innerHTML = `$ ${(lastDeposit.toFixed(2))}`;
+        withdrawalOut.innerHTML = `$ ${lastWithdrawal.toFixed(2)}`;
 
     });
 
