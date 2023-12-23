@@ -16,8 +16,8 @@ const balance = (balanceOut, depositOut, withdrawalOut) => {
         balanceTotal == 0 ? balanceOut.innerHTML = "" : balanceOut.innerHTML = `$ ${balanceTotal.toFixed(2)}`; 
 
         // Write the latest deposit and withdrawal
-        depositOut.innerHTML = `$ ${(lastDeposit.toFixed(2))}`;
-        withdrawalOut.innerHTML = `$ ${lastWithdrawal.toFixed(2)}`;
+        lastDeposit == 0 ? depositOut.innerHTML = "" : depositOut.innerHTML = `$ ${(lastDeposit.toFixed(2))}`;
+        lastWithdrawal == 0 ? withdrawalOut.innerHTML = "" : withdrawalOut.innerHTML = `$ ${lastWithdrawal.toFixed(2)}`;
 
     });
 
