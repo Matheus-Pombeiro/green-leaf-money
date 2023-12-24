@@ -1,5 +1,5 @@
 # green-leaf-money
- A online cash machine simulator
+ An online cash machine simulator
 
 Hi, there! This is the Green Leaf Money, your online cash machine simulator. Of course, the project's features are a bit basic, but here you can simulate your deposits and withdrawals. You can also see the resulting balance of this financial actions. The project's idea was already used by many devs, but the solution and design of the Green Leaf Money belongs to its author. Even so, this project is under the MIT Licence, so you are free to check the code!
 
